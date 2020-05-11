@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,11 +19,6 @@ public class MainActivity extends AppCompatActivity {
     public int point3 = 0;
     public int point4 = 0;
     public int point5 = 0;
-    public int point6 = 0;
-    public int point7 = 0;
-    public int point8 = 0;
-    public int point9 = 0;
-    public int point10 = 0;
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
@@ -59,50 +53,18 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroup1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup arg0, int id) {
-                switch (id) {
-                    case R.id.incorrect3q1:
-                        Toast.makeText(MainActivity.this, "incorrect1", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.correctq1:
-                        Toast.makeText(MainActivity.this, "correct", Toast.LENGTH_SHORT).show();
-                        point1 = 10;
-                        break;
-                    case R.id.incorrect1q1:
-                        Toast.makeText(MainActivity.this, "incorrect2", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.incorrect2q1:
-                        Toast.makeText(MainActivity.this, "incorrect3", Toast.LENGTH_SHORT).show();
-                        break;
-                    default:
-                        Toast.makeText(MainActivity.this, "none", Toast.LENGTH_SHORT).show();
-                        break;
+                if(id == R.id.correctq1) {
+                    point1 = 10;
                 }
 
                 points = point1 + point2 + point3 + point4 + point5;
-
-
             }
         });
 
         radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup arg0, int id) {
-                switch (id) {
-                    case R.id.incorrect3q2:
-                        Toast.makeText(MainActivity.this, "incorrect1", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.correct2q2:
-                        Toast.makeText(MainActivity.this, "correct", Toast.LENGTH_SHORT).show();
-                        point2 = 10;
-                        break;
-                    case R.id.incorrect1q2:
-                        Toast.makeText(MainActivity.this, "incorrect2", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.incorrect2q2:
-                        Toast.makeText(MainActivity.this, "incorrect3", Toast.LENGTH_SHORT).show();
-                        break;
-                    default:
-                        Toast.makeText(MainActivity.this, "none", Toast.LENGTH_SHORT).show();
-                        break;
+                if(id == R.id.correct2q2) {
+                    point2 = 10;
                 }
 
                 points = point1 + point2 + point3 + point4 + point5;
@@ -112,23 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroup3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup arg0, int id) {
-                switch (id) {
-                    case R.id.incorrect3q3:
-                        Toast.makeText(MainActivity.this, "incorrect1", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.correct2q3:
-                        Toast.makeText(MainActivity.this, "correct", Toast.LENGTH_SHORT).show();
-                        point3 = 10;
-                        break;
-                    case R.id.incorrect1q3:
-                        Toast.makeText(MainActivity.this, "incorrect2", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.incorrect2q3:
-                        Toast.makeText(MainActivity.this, "incorrect3", Toast.LENGTH_SHORT).show();
-                        break;
-                    default:
-                        Toast.makeText(MainActivity.this, "none", Toast.LENGTH_SHORT).show();
-                        break;
+                if(id == R.id.correct2q3) {
+                    point3 = 10;
                 }
 
                 points = point1 + point2 + point3 + point4 + point5;
@@ -138,23 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroup4.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup arg0, int id) {
-                switch (id) {
-                    case R.id.incorrect3q4:
-                        Toast.makeText(MainActivity.this, "incorrect1", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.correctq4:
-                        Toast.makeText(MainActivity.this, "correct", Toast.LENGTH_SHORT).show();
-                        point4 = 10;
-                        break;
-                    case R.id.incorrect1q4:
-                        Toast.makeText(MainActivity.this, "incorrect2", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.incorrect2q4:
-                        Toast.makeText(MainActivity.this, "incorrect3", Toast.LENGTH_SHORT).show();
-                        break;
-                    default:
-                        Toast.makeText(MainActivity.this, "none", Toast.LENGTH_SHORT).show();
-                        break;
+                if(id == R.id.correctq4) {
+                    point4 = 10;
                 }
 
                 points = point1 + point2 + point3 + point4 + point5;
@@ -164,25 +96,9 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroup5.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup arg0, int id) {
-                switch (id) {
-                    case R.id.incorrect3q5:
-                        Toast.makeText(MainActivity.this, "incorrect1", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.correctq5:
-                        Toast.makeText(MainActivity.this, "correct", Toast.LENGTH_SHORT).show();
-                        point5 = 10;
-                        break;
-                    case R.id.incorrect1q5:
-                        Toast.makeText(MainActivity.this, "incorrect2", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.incorrect2q5:
-                        Toast.makeText(MainActivity.this, "incorrect3", Toast.LENGTH_SHORT).show();
-                        break;
-                    default:
-                        Toast.makeText(MainActivity.this, "none", Toast.LENGTH_SHORT).show();
-                        break;
+                if(id == R.id.correctq5) {
+                    point5 = 10;
                 }
-
                 points = point1 + point2 + point3 + point4 + point5;
 
             }
