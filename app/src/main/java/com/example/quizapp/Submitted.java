@@ -3,8 +3,10 @@ package com.example.quizapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class Submitted extends AppCompatActivity {
@@ -51,4 +53,12 @@ public class Submitted extends AppCompatActivity {
         }
 
     }
+
+    public void goToQuiz(View view){
+
+        Intent intent = new Intent(Submitted.this, MainActivity.class);
+        startActivity(intent);
+
+    }
+
 }

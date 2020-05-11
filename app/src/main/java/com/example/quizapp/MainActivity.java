@@ -51,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup4 = findViewById(R.id.question4);
         RadioGroup radioGroup5 = findViewById(R.id.question5);
 
+        radioGroup1.clearCheck();
+        radioGroup2.clearCheck();
+        radioGroup3.clearCheck();
+        radioGroup4.clearCheck();
+        radioGroup5.clearCheck();
+
+
         radioGroup1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup arg0, int id) {
                 if(id == R.id.correctq1) {
