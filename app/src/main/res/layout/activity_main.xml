@@ -9,12 +9,14 @@
 
     <ViewFlipper
         android:id="@+id/viewflipper"
-        android:layout_width="351dp"
-        android:layout_height="348dp"
+        android:layout_width="320dp"
+        android:layout_height="330dp"
         android:layout_margin="48dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prev">
@@ -34,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:text="A * adj(A) = ?"
                     android:textColor="#000"
-                    android:textSize="40sp" />
+                    android:textSize="30sp" />
 
                 <RadioGroup
                     android:id="@+id/question2"
@@ -51,7 +53,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A|"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect2q2"
@@ -60,7 +62,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="A-1"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/correct2q2"
@@ -69,7 +71,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A|*I"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect3q2"
@@ -78,7 +80,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A-I|"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                 </RadioGroup>
 
@@ -100,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:text="Order for matrix multiplication -"
                     android:textColor="#000"
-                    android:textSize="40sp" />
+                    android:textSize="30sp" />
 
                 <RadioGroup
                     android:id="@+id/question1"
@@ -117,7 +119,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="m*n n*p"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect1q1"
@@ -126,7 +128,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="m*n m*p"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect2q1"
@@ -135,7 +137,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="m*m n*n"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect3q1"
@@ -144,7 +146,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="m*n p*n"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                 </RadioGroup>
 
@@ -167,7 +169,7 @@
                     android:layout_height="wrap_content"
                     android:text="|A * B| = ?"
                     android:textColor="#000"
-                    android:textSize="40sp" />
+                    android:textSize="30sp" />
 
                 <RadioGroup
                     android:id="@+id/question3"
@@ -184,7 +186,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A| * I"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect2q3"
@@ -193,7 +195,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A| + |B|"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/correct2q3"
@@ -202,7 +204,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A| * |B|"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect3q3"
@@ -211,7 +213,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A-I| * |B-I|"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                 </RadioGroup>
 
@@ -233,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:text="For an Orthogonal Matrix -"
                     android:textColor="#000"
-                    android:textSize="40sp" />
+                    android:textSize="30sp" />
 
                 <RadioGroup
                     android:id="@+id/question4"
@@ -250,7 +252,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="A * A(T) = I"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect1q4"
@@ -259,7 +261,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="A * A(-1)"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect2q4"
@@ -268,7 +270,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="A * I"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect3q4"
@@ -277,7 +279,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="A * A = I"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                 </RadioGroup>
 
@@ -300,7 +302,7 @@
                     android:layout_height="wrap_content"
                     android:text="Involutory Matrix ?"
                     android:textColor="#000"
-                    android:textSize="40sp" />
+                    android:textSize="30sp" />
 
                 <RadioGroup
                     android:id="@+id/question5"
@@ -317,7 +319,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="A * A = I"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect1q5"
@@ -326,7 +328,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A| = 1"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect2q5"
@@ -335,7 +337,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="|A|(2) = 1"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                     <RadioButton
                         android:id="@+id/incorrect3q5"
@@ -344,7 +346,7 @@
                         android:layout_margin="8dp"
                         android:checked="false"
                         android:text="A * I = I"
-                        android:textSize="30sp" />
+                        android:textSize="25sp" />
 
                 </RadioGroup>
 
@@ -355,8 +357,8 @@
 
     <Button
         android:id="@+id/prev"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/lefthand"
@@ -365,8 +367,8 @@
 
     <Button
         android:id="@+id/next"
-        android:layout_width="65dp"
-        android:layout_height="100dp"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/righthand"
@@ -375,33 +377,43 @@
 
     <Button
         android:id="@+id/submitbutton"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/submit_button"
         android:onClick="goToSubmitted"
         android:text="Submit"
-        android:textColor="#FFF"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewflipper" />
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Submit the test once you have completed answering all questions."
+        android:text="*Submit the test once you have completed answering all questions."
         android:textAlignment="gravity"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submitbutton" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logoutbutton"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/retry_button"
+        android:text="Logout"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.ViewFlipper;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     public int points = 0;
@@ -26,10 +28,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button logout = findViewById(R.id.logoutbutton);
         Button prev = findViewById(R.id.prev);
         Button next = findViewById(R.id.next);
 
         final ViewFlipper viewFlipper = findViewById(R.id.viewflipper);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                finish();
+            }
+        });
 
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
